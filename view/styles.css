@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 1rem;
+    color: #FFFAFA;
+    background-color: rgb(97, 16, 93, 0.9);
+    align-items: center;
+}
+
+.conteudoCabecalho{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.textoCabecalho{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    background-color: #83197de6;
+    border-radius: 1rem;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover{
+    background-color: #FFFAFA;
+    color: #81047b;
+    border-radius: 1rem;
+    width: 30%;
+    height: 5rem;
+}
+
+#logoIcon{
+    margin: 0.3rem;
+    width: 3rem;
+}
+
+body {
+    margin:0;
+    background: url("/view/img/notas.jpeg");
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+#title{
+    margin-top: 10%;
+    color: #fff;
+    margin-left: 5%;
+    font-size: 80px;
+}
+
+#h2inicio{
+    font-size: 30px;
+    width: 90%;
+    color: #fff;
+    margin-left: 10%;
+}
+
+.top-page{
+    margin-top: 50px;
+    display: flex;
+    width: 1;
+    align-items: center;
+}
+
+.login{
+    border-radius: 1rem;
+    background-color: #FFFAFA;
+    align-items: center;
+    width: 20rem;
+    margin: auto;
+    font-size: 18px;
+}
+
+.elementslogin{
+    margin:1rem
+}
+
+input{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    width: 15rem;
+    border: #5f275c solid 2px;
+    align-items: center;
+    padding: 2px;
+}
+
+button{
+    padding:0;
+    color: white;
+    margin-top: 1rem;
+    background-color: #81047b;
+    border-radius: 0.8rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 18px;
+    transition: 0.5s;
+    border: black solid 2px;
+}
+
+#iconLogin{
+    margin: 1rem;
+}
+
+button:hover{
+    background-color: #5f275c;
+    color: white;
+    border: black solid 2px;
+}
+
+.newAccount{
+    margin-top: 1rem;
+    font-size: 14px;
+    margin-right: 2rem;
+}
+
+#sobreH1, #parceirosH1, #carreirasH1, #contatosH1{
+    margin-left: 3%;
+    margin-top: 1%;
+    font-size: 30px;
+}
+
+.sobre, .parceiros, .carreiras, .contatos{
+    padding: 1rem;
+    margin-top: 8rem;
+    color: #fff;
+    background-color: rgb(97, 16, 93, 0.9);
+    border-radius: 1rem;
+    width: 100%;
+    font-size: 23px;
+}
+
+.conteudoSobre, .conteudoCarreiras{
+    display: flex;
+    margin-top: 0.2rem;
+    justify-content:space-around;
+    font-size: 23px;
+}
+
+#empresa{
+    margin: 5%;
+    border-radius: 1rem;
+    padding: 0;
+    width: 500px;
+}
+#textoSobre, #textoParceiros, #textoCarreiras, #textoContatos{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: auto;
+}
+#textoContatos{
+  line-height: 200%;
+}
+
+.listas{
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  line-height: 140%;
+}
+
+#divLista{
+   margin-left: 20%; 
+}
+
+.parceiros, .sobre, .carreiras, .contatos{
+  margin-top: 5rem;
+  width: 100%;
+  background-color: rgb(97, 16, 93, 0.9);
+  color: #fff;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.conteudoParceiros{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 10%;
+    line-height: auto;
+}
+
+.imgs{
+  display: flex;
+  padding: 1%;
+}
+
+#facebook, #google, #instagram{
+  width: 320px;
+  padding: 1rem;
+  height: 120px;
+}
+iframe{
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: black 2 px solid;
+  width: 500px;
+  height: 400px;
+}
+.footer{
+  text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1500px)
+{
+  #empresa{
+    width: 420px;
+  }
+  #h2inicio{
+    font-size: 28px;
+  }
+  .conteudoSobre, #textoParceiros, #textoCarreiras, #textoContatos, .footer{
+    font-size: 17px;
+  }
+
+  .login{
+    width: 18rem;
+    font-size: 16px;
+  }
+    input{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    height: 1.2rem;
+    width: 14rem;
+}
+    button{
+    width: 4rem;
+    height: 2rem;
+    font-size: 16px;
+}
+#google, #facebook, #instagram{
+  width: 290px;
+  }
+}
+
+@media (max-width: 1400px)
+{
+  #title{
+    font-size: 75px;
+  }
+  #empresa{
+    width: 300px;
+  }
+  #h2inicio{
+    font-size: 24px;
+  }
+  .login , .newAccount{
+    width: 15rem;
+  }
+    input{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    height: 1.2rem;
+    width: 12rem
+  }
+  button{
+    width: 3rem;
+    height: 2rem;
+    font-size: 14px;
+  }
+  #google, #facebook, #instagram{
+  width: 250px;
+   height: 100px;
+  }
+  iframe{
+  width: 400px;
+  height: 300px;
+  }
+}
+
+
+@media (max-width: 1000px)
+{
+  #title{
+    margin-top: 20%;
+    font-size: 70px;
+  }
+  #empresa{
+    width: 250px;
+  }
+  #h2inicio{
+    font-size: 22px;
+  }
+  .login , .newAccount{
+    width: 14rem;
+    font-size: 12px;
+  }
+    input{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    height: 1.0rem;
+    width: 10rem;
+}
+#facebook, #google,  #instagram{
+  width: 200px;
+   height: 80px;
+}
+iframe{
+  width: 300px;
+  height: 250px;
+}
+}
+
+@media (max-width: 900px)
+{
+  #title{
+    font-size: 68px;
+  }
+  #empresa{
+    width: 200px;
+  }
+  #h2inicio{
+    font-size: 20px;
+  }
+  .conteudoSobre, #textoParceiros, .textoCarreiras, #textoContatos, .footer{
+    font-size: 13px;
+  }
+  #google, #facebook,  #instagram{
+  width: 150px;
+  height: 80px;
+}
+iframe{
+  width: 250px;
+  height: 200px;
+}
+}
+
+@media (max-width: 750px)
+{
+.textoCabecalho{
+    margin-right: 0;
+    margin-left: 3rem;
+}
+.conteudoSobre, #textoParceiros, #textoCarreiras, #textoContatos, .footer{
+    font-size: 10px;
+}
+  #google, #facebook,  #instagram{
+  width: 120px;
+   height: 80px;
+}
+}
+
+@media (max-width: 600px)
+{
+.textoCabecalho{
+    margin-right: 0;
+    margin-left: 2rem;
+}
+#google, #facebook,  #instagram{
+  width: 90px;
+  height: 60px;
+}
+iframe{
+  width: 180px;
+  height: 140px;
+}
+  #logoIcon{
+    display: none;
+}
+.conteudoCabecalho{
+    margin-top: 1.8rem;
+    font-size: 10px;
+}
+}
